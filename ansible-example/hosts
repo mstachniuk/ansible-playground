@@ -1,0 +1,6 @@
+[web]
+host1.fbi.com:2001 ansible_user=root
+host2.fbi.com:2002 ansible_user=root
+
+[haproxy]
+host0.fbi.com:2000 ansible_user=root

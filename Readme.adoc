@@ -1,0 +1,29 @@
+Ansible Playground 
+
+A simple project for provisioning 3 Docker containers on local machine and play with Ansible using Docker Compose.
+
+
+.Build Docker Images
+[source,shell]
+----
+./build-docker.sh
+----
+
+.Run 3 servers locally
+[source,shell]
+----
+./run-compose.sh
+----
+
+.Stop servers
+[source,shell]
+----
+docker compose down
+----
+
+.Run Ansible example code
+[source,shell]
+----
+cd ansible-example
+ansible-playbook -i hosts apache.yml haproxy.yml
+----

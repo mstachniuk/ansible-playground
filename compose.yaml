@@ -1,0 +1,19 @@
+services:
+  host0:
+    image: "ansible-host:latest"
+    ports:
+      - "2000:22"
+      - "8080:80"
+  host1:
+    image: "ansible-host:latest"
+    ports:
+      - "2001:22"
+      - "8081:80"
+  host2:
+    image: "ansible-host:latest"
+    ports:
+      - "2002:22"
+      - "8082:80"
+
+networks:
+  network1:
